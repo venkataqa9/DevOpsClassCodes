@@ -4,4 +4,4 @@ From tomcat:latest
 MAINTAINER "sunil" 
 
 # copy war file on to container 
-COPY ./webapp.war /usr/local/tomcat/webapps
+COPY ./addressbook.war /usr/local/tomcat/webapps
