@@ -4,4 +4,4 @@ From tomcat:latest
 MAINTAINER "sunil" 
 
 # copy war file on to container 
-COPY ./addressbook.war /usr/local/tomcat/webapps
+COPY /var/lib/jenkins/workspace/Java-Project/target/addressbook.war /usr/local/tomcat/webapps
