@@ -28,7 +28,7 @@ pipeline {
         }
         stage("Tag the image") {
             steps {
-             sh 'docker tag addressbook:latest daidasunny/addressbook:1.0'
+             sh 'docker tag addressbook:latest 727630377353/addressbook:1.0'
             }
         }
         stage('Push Image to Dockerhub') {
