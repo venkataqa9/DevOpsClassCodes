@@ -35,7 +35,7 @@ pipeline {
             steps {
              withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: "dockerhub_id", usernameVariable: 'DOCKER_HUB_USER', passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
             sh 'docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD'
-            sh 'docker push daidasunny/addressbook:1.0'
+            sh 'docker push 727630377353/addressbook:1.0'
             }
         }
         
