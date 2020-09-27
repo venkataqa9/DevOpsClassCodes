@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Build image") {
             steps {
-             sh 'docker build -t addressbook:latest .'
+             sh 'sudo docker build -t addressbook:latest .'
             }
         }
         stage("Tag the image") {
