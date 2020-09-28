@@ -1,7 +1,7 @@
 pipeline { 
  agent any 
   stages { 
-     stage('deploy) { 
+     stage('deploy') { 
         steps {
           sh 'kubectl apply -f addressbook-deployment.yaml'
           sh 'kubectl apply -f adressbook-service.yaml'
